@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>LLM to CORSICA. The Marriage.</title>
+
+    <link href="/css/hover_pack.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/colors/color-74c9be.css" rel="stylesheet">    
+    <link href="/css/animations.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    
+    
+    <!-- JavaScripts needed at the beginning
+    ================================================== -->
+    <script type="text/javascript" src="http://alvarez.is/demo/marco//js/twitterFetcher_v10_min.js"></script>
+
+    <!-- MAP SCRIPT - ALL CONFIGURATION IS PLACED HERE - VIEW OUR DOCUMENTATION FOR FURTHER INFORMATION -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+    <script type="text/javascript">
+        // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+    
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 7,
+                
+                scrollwheel: false,
+
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(42.1500, 9.0833), // Corsica
+
+                // How you would like to style the map. 
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [	{		featureType:'water',		stylers:[{color:'#74c9be'},{visibility:'on'}]	},{		featureType:'landscape',		stylers:[{color:'#f2f2f2'}]	},{		featureType:'road',		stylers:[{saturation:-100},{lightness:45}]	},{		featureType:'road.highway',		stylers:[{visibility:'simplified'}]	},{		featureType:'road.arterial',		elementType:'labels.icon',		stylers:[{visibility:'off'}]	},{		featureType:'administrative',		elementType:'labels.text.fill',		stylers:[{color:'#444444'}]	},{		featureType:'transit',		stylers:[{visibility:'off'}]	},{		featureType:'poi',		stylers:[{visibility:'off'}]	}]
+            };
+
+            // Get the HTML DOM element that will contain your map 
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('map');
+
+            var myLatlng = new google.maps.LatLng(42.1428,8.7975);
+
+            
+
+            // Create the Google Map using out element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: 'Hello'
+            });
+        }
+    </script>
+    
+    
+    <!-- Main Jquery & Hover Effects. Should load first -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/js/hover_pack.js"></script>
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+
+	<! ========== HEADERWRAP ==================================================================================================== 
+	=============================================================================================================================>
+    <div id="headerwrap">
+    	<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2 mt">
+					<h1 class="animation slideDown">We are getting <span style="color: #1abc9c;">MARRIED</span>.</h1>
+    				<p class="mt"><a href="#header_link"><button type="button" class="btn btn-cta btn-lg">WOW. Really?</button></a></p>
+				</div>
+				
+			</div><!-- /row -->
+    	</div><!-- /container -->
+    </div> <!-- /headerwrap -->
+
+	<! ========== HAPPENINGS ==================================================================================================== 
+	=============================================================================================================================>    
+	<div class="container">	
+
+		<div class="row mt centered ">
+    <a name="header_link"></a> 
+			<div class="col-lg-4 col-lg-offset-4">
+        
+				<h3>What Is Happening?</h3>
+				<hr>
+			</div>
+		</div><!-- /row -->
+
+		<div class="row mt">
+			<div class="col-lg-4 col-md-4 col-xs-12 desc">
+				<a class="b-link-fade b-animate-go" href="#"><img width="350" src="/img/portfolio/port04.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Travel</h4>
+					</div>
+				</a>
+				<p style="font-size: 1.2em; font-weight: 900;">Everyone is coming</p>
+				<p class="lead">From Pakistan to Italy, from France to Panama. Join friends and family coming from the corners of the world to Paradise in the Mediterranean.</p>
+				<hr-d>
+			</div><!-- col-lg-4 -->
+			
+			<div class="col-lg-4 col-md-4 col-xs-12 desc">
+				<a class="b-link-fade b-animate-go" href="#"><img width="350" src="/img/portfolio/port05.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Enjoy</h4>
+					</div>
+				</a>
+				<p style="font-size: 1.2em; font-weight: 900;">Live an unforgettable moment</p>
+				<p class="lead">Trek parts of the infamous GR20. Taste gastronomic wonders from the sea and the land. Skinny dip in turqouise clear waters.</p>
+				<hr-d>
+			</div><!-- col-lg-4 -->
+			
+			<div class="col-lg-4 col-md-4 col-xs-12 desc">
+				<a class="b-link-fade b-animate-go" href="#"><img width="350" src="/img/portfolio/port06.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Remember</h4>
+					</div>
+				</a>
+				<p style="font-size: 1.2em; font-weight: 900;">Share with us</p>
+				<p class="lead">Witness the most important moment of our lives. Dance with us until the sun comes out. And take lots of pics because most of us won't remember.</p>
+				<hr-d>
+			</div><!-- col-lg-4 -->
+			
+		</div><!-- /row -->
+	</div><!-- /container -->
+
+<! ========== MAP SECTION =============================================================================================== 
+  =============================================================================================================================>    
+
+  <div id="white">
+    <div class="container">
+        <div class="row mt">
+          <div class="col-lg-4 col-lg-offset-4 centered">
+            <h3>Where?</h3>
+            <hr>
+          </div>
+        </div><! --/row -->
+    </div><!-- /container -->
+  <div id="map"></div>  
+  </div><!-- /white -->
+
+<! ========== TIMER SECTION =============================================================================================== 
+  =============================================================================================================================>    
+
+  <div id="white">
+    <div class="container">
+        <div class="row mt">
+          <div class="col-lg-4 col-lg-offset-4 centered">
+            <h3>When?</h3>
+            <hr>
+          </div>
+        </div><! --/row -->
+    </div><!-- /container -->
+    <div id="calendar"><img src="/img/portfolio/calendar.jpg" style="width:100%;"></div>
+    <div id="clock"></div>
+  </div><!-- /white -->
+
+
+	
+	<! ========== CALL TO ACTION 1 ============================================================================================== 
+	=============================================================================================================================>    
+    <div id="cta01">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-lg-8 col-lg-offset-2">
+    				<h2>Have you booked your plane? Reserved your hotel? Chosen your costume?</h2>
+    				<a href="#info_link"><button type="button" class="btn btn-cta btn-lg">KEEP READING</button></a>
+    			</div>
+    		</div><!-- /row -->
+    	</div><!-- /container -->
+    </div><! --/cta01 -->
+
+	<! ========== PORTFOLIO SECTION ============================================================================================= 
+	=============================================================================================================================>    
+	<div class="container">
+  <a name="info_link"></a> 
+		<div class="row mt centered ">
+			<div class="col-lg-4 col-lg-offset-4">
+				<h3>Getting there</h3>
+				<hr>
+			</div>
+		</div><!-- /row -->
+		<div class="row mt centered">	
+			<div class="col-lg-4 desc">
+				<a class="b-link-fade b-animate-go" href="http://www.airfrance.com"><img width="350" src="/img/portfolio/port01.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Fly</h4>
+					</div>
+				</a>
+				<p style="text-align:left;">Flights from Paris and major European capitals take you directly to Napoleon Bonaparte airport in Ajaccio. Find the cheapest. Fast!</p>
+			</div>
+			<div class="col-lg-4 desc">
+				<a class="b-link-fade b-animate-go" href="http://www.corsica-ferries.fr/"><img width="350" src="/img/portfolio/port02.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Sail</h4>
+					</div>
+				</a>
+				<p style="text-align:left;">If plane doesn't cut it, get to Marseille, Nice or Toulon to then grab the Corsica Ferry. Brace yourself for the sceneries.</p>
+			</div>
+			<div class="col-lg-4 desc">
+				<a class="b-link-fade b-animate-go" href="#"><img width="350" src="/img/portfolio/port03.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Swim</h4>
+					</div>
+				</a>
+				<p style="text-align:left;">Only 100km separate Corsica from European mainland, so if you have it in you, send your bags by post and put on your goggles. No sharks, guaranteed.</p>
+			</div>
+		</div><!-- /row -->
+	</div><!-- /container -->
+
+<! ========== CAR RENTAL ============================================================================================== 
+  =============================================================================================================================>    
+    <div id="cta02">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2>Renting a car is a DEFINITE MUST. From Ajaccio to your hotel. From your hotel to the village. And more.</h2>
+            <a href="http://www.autoescape.com/"><button type="button" class="btn btn-cta btn-lg">RENT NOW</button></a>
+          </div>
+        </div><!-- /row -->
+      </div><!-- /container -->
+    </div><! --/cta02 -->
+	
+
+	<! ========== FEATURED ICONS ================================================================================================ 
+	=============================================================================================================================>    
+    <div class="container">
+    <div class="row mt centered ">
+      <div class="col-lg-4 col-lg-offset-4">
+        <h3>Places to stay</h3>
+        <hr>
+      </div>
+    </div><!-- /row -->
+    	<div class="row mt">
+    		<div class="col-lg-4 centered si">
+    			<i class="fa fa-heart"></i><i class="fa fa-heart"></i>
+    			<h4>Hotel Paradisu</h4>
+    			<p>In Vico. 10 minutes away.</p>
+          <a href="http://www.hoteluparadisu.com/">Check it out</a>
+    		</div>
+    		<div class="col-lg-4 centered si">
+    			<i class="fa fa-heart"></i>
+    			<h4>Vico Houses & Apartments</h4>
+    			<p>In Vico. 10 minutes away.</p>
+          <a href="http://www.homeaway.com/vacation-rentals/france/vico/r18192">Check it out</a>
+    		</div>
+    		<div class="col-lg-4 centered si">
+    			<i class="fa fa-heart"></i>
+    			<h4>Bed & Breakfast Vico</h4>
+    			<p>In Vico. 10 minutes away.</p>
+          <a href="http://www.gite-vico-corse.com/">Check it out</a>
+    		</div>    	
+
+    		<div class="col-lg-4 centered si">
+    			<i class="fa fa-heart"></i>
+    			<h4>Gîte La Sposata</h4>
+    			<p>In Vico. 15 minutes away.</p>
+          <a href="http://www.gites-corsica.com/location-vacances-Gite-a-Vico-Corse-20G16632.html">Check it out</a>
+    		</div>
+    		<div class="col-lg-4 centered si">
+    			<i class="fa fa-heart"></i>
+    			<h4>Gîte  Vico</h4>
+    			<p>In Vico. 15 minutes away.</p>
+          <a href="http://www.gites-corsica.com/location-vacances-Gite-a-Vico-Corse-20G16051.html">Check it out</a>
+    		</div>
+    		<div class="col-lg-4 centered si">
+    			<i class="fa fa-heart"></i><i class="fa fa-heart"></i>
+    			<h4>U Libbiu</h4>
+    			<p>In Sagone. 30 minutes away.</p>
+          <a href="http://booking.com/8ace5976de102c">Check it out</a>
+    		</div>    	
+
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-heart"></i><i class="fa fa-heart"></i>
+          <h4>Hotel Cyrnos</h4>
+          <p>In Sagone. 30 minutes away.</p>
+          <a href="http://hotelcyrnos.chez.com/">Check it out</a>
+        </div>
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-heart"></i><i class="fa fa-heart"></i>
+          <h4>A Rena d'Oru</h4>
+          <p>In Sagone. 30 minutes away.</p>
+          <a href="http://www.arenadoru.com/">Check it out</a>
+        </div>
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-heart"></i>
+          <h4>La Marine</h4>
+          <p>In Sagone. 30 minutes away.</p>
+          <a href="http://www.hotellamarinesagone.com/">Check it out</a>
+        </div>      
+
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-heart"></i>
+          <h4>Casa Turrigiani</h4>
+          <p>In Sagone. 30 minutes away.</p>
+          <a href="http://www.casa-turrigiani.com/fr/situation">Check it out</a>
+        </div>
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-heart"></i><i class="fa fa-heart"></i>
+          <h4>Hôtel Bel Mare</h4>
+          <p>In Cargese. 45 minutes away.</p>
+          <a href="www.belmare.net">Check it out</a>
+        </div>
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-heart"></i><i class="fa fa-heart"></i>
+          <h4>Résidence Roc e Mare</h4>
+          <p>In Cargese. 45 minutes away.</p>
+          <a href="http://www.roc-e-mare-cargese.com/">Check it out</a>
+        </div>  
+
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-heart"></i><i class="fa fa-heart"></i>
+          <h4>Hôtel les Lentisques</h4>
+          <p>In Cargese. 45 minutes away.</p>
+          <a href="http://www.leslentisques.com/">Check it out</a>
+        </div>
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-heart"></i><i class="fa fa-heart"></i>
+          <h4>Hôtel Le Thalassa</h4>
+          <p>In Cargese. 45 minutes away.</p>
+          <a href="www.hotel-le-thalassa.com">Check it out</a>
+        </div>
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-heart"></i><i class="fa fa-heart"></i>
+          <h4>Residenza l'Alivetu</h4>
+          <p>In Cargese. 45 minutes away.</p>
+          <a href="http://www.residenza-alivetu.com/">Check it out</a>
+        </div>  
+
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-heart"></i>
+          <h4>Résidence Helios</h4>
+          <p>In Cargese. 45 minutes away.</p>
+          <a href="http://booking.com/5a530400701e7920">Check it out</a>
+        </div>
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-heart"></i>
+          <h4>Résidence Maina</h4>
+          <p>In Cargese. 45 minutes away.</p>
+          <a href="http://www.residencemaina.com/">Check it out</a>
+        </div>
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-heart"></i>
+          <h4>Houses in Cargese</h4>
+          <p>In Cargese. 45 minutes away.</p>
+          <a href="http://www.homeaway.com/vacation-rentals/france/cargese/r18251">Check it out</a>
+        </div>  
+    	</div><!-- /row -->
+    </div><!-- /container -->
+
+  <! ========== ACTIVITIES ================================================================================================ 
+  =============================================================================================================================>    
+    <div id="white">
+      <div class="container">
+        <div class="row mt">
+          <div class="col-lg-4 col-lg-offset-4 centered">
+            <h3>Things to do</h3>
+            <hr>
+          </div>
+        </div>
+        <div class="row mt">
+          <div class="col-lg-3">
+            <p class="capitalize">1</p>
+            <h4>Trekking</h4>
+            <p>Corsica is filled with some of the planet's most mountainous landscapes and is home to the legendary GR20. We will be doing one major hike on Wednesday August 26 (Lac de Creno, Balade de Muna, Girolata or parts of the GR20)</p>
+          </div>
+          <div class="col-lg-3">
+            <p class="capitalize">2</p>
+            <h4>Football</h4>
+            <p>Since their is people coming from all over we will be organizing a mini World Cup on Thursday August 27 in the village's football field, so pack your Messi and Ronaldo jerseys.</p>
+          </div>
+          <div class="col-lg-3">
+            <p class="capitalize">3</p>
+            <h4>Diving and snorkeling</h4>
+            <p>For those who like jumping into the water their are a thousand and one spots to check out corals, fish and thongs. Check out this <a href="http://www.subevasion-corsica.com">link</a> for more information.</p>
+          </div>      
+  
+          <div class="col-lg-3">
+            <p class="capitalize">4</p>
+            <h4>Canyoning</h4>
+            <p>The area where we will be getting married is filled with large turquoise water holes, red diagonal walls of red rock and perfect spots for sliding all day. More info on <a href="http://www.lesescapades.com">Les Escapades</a>.</p>
+          </div>
+        </div><!-- /row -->
+        <div class="row mt">
+          <div class="col-lg-3">
+            <p class="capitalize">5</p>
+            <h4>Parapente</h4>
+            <p>With some of the most beautiful beaches in the Mediterranean and magic gusts of wind, the <a href="http://www.golfedesagone.net>">Golf of Sagone</a> is the perfect spot for flying.</p>
+          </div>
+          <div class="col-lg-3">
+            <p class="capitalize">6</p>
+            <h4>Boat trips</h4>
+            <p>The Calanques de Piana is one of Corsica's most popular spots. Imagine tall walls of rock descending directly down to transparent water. Now imagine seeing that <a href="http://www.croisierescorsesalbellu.com"> on a beautiful boat</a>.</p>
+          </div>
+        </div><!-- /row -->
+      </div><!-- /container -->
+    </div><!-- /white -->
+
+  <! ========== INVITE PIC ============================================================================================== 
+  =============================================================================================================================>    
+    <div id="cta03">
+      <div class="container">
+        <div class="row">
+
+        </div><!-- /row -->
+      </div><!-- /container -->
+    </div><! --/cta02 -->
+
+	<! ========== CONTACT CAROUSEL ========================================================================================== 
+	=============================================================================================================================>    
+
+	<div class="container">
+    	<div class="row mt">
+    		<div class="col-lg-8 col-lg-offset-2 centered">
+    			<h3>Are you coming?</h3>
+          <!-- <div id='contact-box' class="group">
+            <div class="span6 clear">
+              <form action="/index.html" method="post" class="well" style="font-size:1.3em;font-family: 'Ruda', sans-serif;font-weight: 900;color: #333;">
+                <label for="name">Your name</label>
+                <br>
+                <input type="text" name="name" class="span4" placeholder="Juan Pardini...">
+                <br><br>
+                <label for="invitees">Any +1s</label>
+                <br>
+                <input type="text" name="invitees" class="span4" placeholder="Yes/No">
+                <br><br>
+               <label for="vegetarian">Vegetarian</label>
+                <br>
+                <input type="text" name="vegetarian" class="span4" placeholder="Yes/No">
+                <br><br>
+                <label for="message">Questions</label>
+                <br>
+                <textarea name="message" cols='30' rows="5"></textarea>
+                <br>
+                <br>
+                <button type="submit" class="btn" value="Send">Submit</button>
+              </form>
+            </div>
+          </div>   -->
+    		</div>
+    	</div><! --/row -->
+	</div><!-- /container -->
+
+
+	
+	
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/retina.js"></script>
+    <script src="/js/jquery.downCount.js"></script>
+
+
+  	<script>
+		$(window).scroll(function() {
+			$('.si').each(function(){
+			var imagePos = $(this).offset().top;
+	
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+400) {
+					$(this).addClass("slideUp");
+				}
+			});
+      $('#clock').countdown('2015/05/01', function(event) {
+        var $this = $(this).html(event.strftime(''
+          + '<span>%w</span> weeks '
+          + '<span>%d</span> days '
+          + '<span>%H</span> hr '
+          + '<span>%M</span> min '
+          + '<span>%S</span> sec'));
+      });
+		});
+	</script>    
+  <script>
+
+  </script>
+
+
+  
+  </body>
+</html>
