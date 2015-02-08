@@ -19,7 +19,7 @@ class Web < Sinatra::Base
       :from => params[:email_address],
       :to => 'londontocorsica@gmail.com',
       :subject => 'RE: Wedding answer from ' + params[:name],
-      :body => params[:name] + 'is coming to the wedding. He/she put  ' + params[:vegetarian] + ' for vegetarian, ' + params[:invitees] + ' for invitees. And asked: ' + params[:message],
+      :body => params[:name] + ' is coming to the wedding. He/she put ' + params[:vegetarian] + ' for vegetarian, ' + params[:invitees] + ' for invitees. And asked: ' + params[:message],
       :via => :smtp,
       :via_options => { 
         :address              => 'smtp.gmail.com',
