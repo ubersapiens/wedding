@@ -13,23 +13,23 @@ class Web < Sinatra::Base
     redirect '/index.html'
   end
 
-  # post '/index.html' do 
-  #   require 'pony'
-  #   Pony.mail(
-  #     :from => params[:email_address],
-  #     :to => 'pardinicoffee@gmail.com',
-  #     :subject => 'RE: Wedding answer from ' + params[:name],
-  #     :body => 'A bag of amazing coffee has been ordered by ' + params[:email_address] + '. Add the client\'s information to Pardini Co. sales sheet. And get ready to make some awesome coffee!',
-  #     :via => :smtp,
-  #     :via_options => { 
-  #       :address              => 'smtp.gmail.com',
-  #       :port           => '587',
-  #       :enable_starttls_auto => true, 
-  #       :user_name => ENV['GMAIL_USERNAME'],
-  #       :password => ENV['GMAIL_PASSWORD'],
-  #       :authentication       => :plain, 
-  #       :domain               => 'localhost.localdomain'
-  #     })
-  #   redirect '/index.html' 
-  # end
+  post '/index.html' do 
+    require 'pony'
+    Pony.mail(
+      :from => params[:email_address],
+      :to => 'londontocorsica@gmail.com',
+      :subject => 'RE: Wedding answer from ' + params[:name],
+      :body => params[:name] + 'is coming to the wedding. He/she put  ' + params[:vegetarian] + ' for vegetarian, ' + params[:invitees] + ' for invitees. And asked: ' + params[:message],
+      :via => :smtp,
+      :via_options => { 
+        :address              => 'smtp.gmail.com',
+        :port           => '587',
+        :enable_starttls_auto => true, 
+        :user_name => ENV['WEDDING_USERNAME'],
+        :password => ENV['WEDDING_PASSWORD'],
+        :authentication       => :plain, 
+        :domain               => 'localhost.localdomain'
+      })
+    redirect '/index.html' 
+  end
 end
